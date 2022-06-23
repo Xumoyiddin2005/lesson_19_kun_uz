@@ -1,0 +1,51 @@
+###
+POST http://localhost:8081/article/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0NzQ0OTQsImV4cCI6MTY1NTQ3ODA5NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoyLCJyb2xlIjoiTU9ERVJBVE9SIn0.vEYoUd2bUCE7FCcPf-a2N1KOrE5xTVddm4sru6uVOpw
+
+{
+  "title": "555555",
+  "content": "Xabar kontenti",
+  "description": "dasdasdasdasdasd",
+  "regionId": 3,
+  "categoryId": 1,
+  "typesList": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "tagList": [
+    "#maymunChechak",
+    "#kasallik",
+    "#epidemiya"
+  ]
+}
+
+
+###
+GET http://localhost:8081/article/category/Dolzarb
+Content-Type: application/json
+
+###
+GET http://localhost:8081/article/type/buxoro
+Content-Type: application/json
+
+###
+POST http://localhost:8081/article/last8
+Content-Type: application/json
+
+{
+  "idList": [
+    "8a8a83988171f7f7018171f89eda0003",
+    "8a8a83988171f7f7018171f891c50002",
+    "8a8a83988171f7f7018171f854870000"
+  ]
+}
+
+
+###
+GET http://localhost:8081/article/8a8a83988171f7f7018171f89eda0003
+Content-Type: application/json
+Accept-Language: uz
